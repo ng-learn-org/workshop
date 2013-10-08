@@ -19,7 +19,9 @@
 
     ``` html
       <div>Welcome to the AngularJS World</div>
+      
       <script src="bower_components/angular/angular.js"></script>
+    
     </body>
     ```
 
@@ -41,7 +43,7 @@
     grunt server
     ```
 
-The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
+  note: The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
 
 ### Step 1 - Defining our first module
 
@@ -68,12 +70,11 @@ The application should say "Welcome to the AngularJS World," but the "{{userName
    
       <!-- build:js({.tmp,app}) scripts/scripts.js -->
       <script src="scripts/app.js"></script>
-   
       <!-- endbuild -->
     </body>
     ```
 
- note: we add our js file wrapped in a 'build comment' so our toolchain converts it from coffee script to javascript.
+  note: we add our js file wrapped in a 'build comment' so our toolchain converts it from coffee script to javascript.
 
 
 
