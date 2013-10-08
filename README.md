@@ -55,7 +55,7 @@
     <body ng-app="myStoreApp">
     ```
 
-- Create app.js inside app folder and define our application in app.coffee
+- Create app.coffee inside app folder and define our application in app.coffee
 
     ```
     angular.module "myStoreApp", []
