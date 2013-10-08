@@ -27,7 +27,7 @@
 
 - Lets update our welcome message
 
-        <div>Welcome to the AngularJS World, {{userName}}</div>
+    <div>Welcome to the AngularJS World, {{userName}}</div>
 
 - Start the app
 
