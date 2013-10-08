@@ -1,6 +1,6 @@
 ### PreRequisites
 
-- Install NPM
+- Install Node and NPM
 
 ### Checkout
 
