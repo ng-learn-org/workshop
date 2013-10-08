@@ -45,6 +45,8 @@ The application should say "Welcome to the AngularJS World," but the "{{userName
 
 ### Step 2 - Defining our first module
 
+    git checkout -f step-0
+
 - Lets name our application
 
     ``` html
