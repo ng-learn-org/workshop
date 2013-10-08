@@ -1,17 +1,17 @@
-# PreRequisites
+### PreRequisites
 
 - Install NPM
 
-# Checkout
+### Checkout
 
     git clone https://github.com/ng-learn-org/workshop.git
 
-# Setup
+### Setup
 
     cd workshop
     npm install
 
-# Step 1 - Setup the AngularJs App
+### Step 1 - Setup the AngularJs App
 
     git checkout -f step-0
 
@@ -43,7 +43,7 @@
 
 The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
 
-# Step 2 - Defining our first module
+### Step 2 - Defining our first module
 
 - Lets name our application
 
