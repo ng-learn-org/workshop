@@ -2,12 +2,9 @@
 
 - Install Node and NPM
 
-### Checkout
-
-    git clone https://github.com/ng-learn-org/workshop.git
-
 ### Setup
 
+    git clone https://github.com/ng-learn-org/workshop.git
     cd workshop
     npm install
 
