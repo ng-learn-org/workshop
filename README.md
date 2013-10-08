@@ -37,7 +37,9 @@
 
 - Start the app
 
+    ```    
     grunt server
+    ```
 
 The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
 
@@ -51,7 +53,9 @@ The application should say "Welcome to the AngularJS World," but the "{{userName
 
 - Create app.js inside app folder and define our application in app.coffee
 
+    ```
     angular.module "myStoreApp", []
+    ```
 
 - Add app.js to our index.html so the browser will load it
 
