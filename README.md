@@ -11,7 +11,7 @@
     cd workshop
     npm install
 
-### Step 1 - Setup the AngularJs App
+### Step 0 - Setup the AngularJs App
 
     git checkout -f step-0
 
@@ -43,9 +43,9 @@
 
 The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
 
-### Step 2 - Defining our first module
+### Step 1 - Defining our first module
 
-    git checkout -f step-0
+    git checkout -f step-1
 
 - Lets name our application
 
