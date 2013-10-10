@@ -1,1 +1,3 @@
-angular.module "myStoreApp", []
+angular.module("myStoreApp", []).
+  run ->
+    console.log 'Its alive!'

@@ -55,8 +55,10 @@
 - Create app.coffee inside app folder and define our application in app.coffee
 
     ```
-    angular.module "myStoreApp", []
+    angular.module("myStoreApp", [])
     ```
+
+  note: Here we define a module named 'myStoreApp'. The second parameter it is an array of dependencies required for this module.
 
 - Add app.js to our index.html so the browser will load it
 
@@ -72,6 +74,18 @@
     ```
 
   note: we add our js file wrapped in a 'build comment' so our toolchain converts it from coffee script to javascript.
+
+- To prove our point, we will add a Run block to our module. Run blocks are the closest thing in Angular to the main method in Java.
+  It will be executed after all the dependencies have been injected. Open app.coffee and make the following modification
+
+    ```
+    angular.module("myStoreApp", []).
+      run ->
+        console.log 'Its alive!'
+    ```
+
+
+
 
 
 
