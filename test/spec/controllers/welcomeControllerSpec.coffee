@@ -18,6 +18,6 @@ describe "Controller: WelcomeController", ->
     )
   )
 
-  it "should attach a list of awesomeThings to the scope", ->
+  it "should compose the fullName based on firstName and lastName attributed from prexisting profile object", ->
     expect(scope.fullName).toBe "Santiago Esteva"
 

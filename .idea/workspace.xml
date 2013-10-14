@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" afterPath="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +52,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="5" selection-start="6313" selection-end="6313" vertical-scroll-proportion="0.8986486">
+            <state line="171" column="109" selection-start="6410" selection-end="6410" vertical-scroll-proportion="0.8986486">
               <folding />
             </state>
           </provider>
@@ -62,7 +61,7 @@
       <file leaf-file-name="welcomeControllerSpec.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="0" selection-end="557" vertical-scroll-proportion="0.0">
+            <state line="20" column="6" selection-start="450" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -476,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="0" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="33" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
@@ -490,9 +482,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="6" selection-start="450" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="5" selection-start="6313" selection-end="6313" vertical-scroll-proportion="0.8986486">
+        <state line="171" column="109" selection-start="6410" selection-end="6410" vertical-scroll-proportion="0.8986486">
           <folding />
         </state>
       </provider>
