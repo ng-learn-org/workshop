@@ -6,4 +6,5 @@ angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)
 
   $scope.userName = "Santiago"
 
+
 ]

@@ -135,6 +135,13 @@ As a best practice we keep the same names, specially when we deal with Angular o
  Now, lets play with the inputs and lets see what happens. As you can see the first input generates the Bidirectional binding between the input and the welcome phrase.
  This is Angular magic. the userName variable exists under an specific scope, the controller's scope. This is why the input that exists outside our controller does not change and when we enter text it does not change the welcome phrase.
 
+### Step 3 - Our first Requirement
+
+ **AC:** As a User, when I open myStore home page, then I should see the phrase "Welcome to the AngularJS World, [firstName] [lastName]".
+ **Assumptions:** The application already has an object called profile that contains firstName and lastName.
+
+ Now that we know our AC, we need to write our first unit test.
+
 
 
 
