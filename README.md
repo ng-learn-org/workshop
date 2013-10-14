@@ -97,7 +97,7 @@
  <div ng-controller="welcomeController">Welcome to the AngularJS World, {{userName}}</div>
  ```
 
- notes: When you do this, Angular will look for a controller - inside of our myStoreApp module - called welcomeController. This controller will only have power over whats happening inside our <div>. We will refer to this domain as scope.
+ **notes:** When you do this, Angular will look for a controller - inside of our myStoreApp module - called welcomeController. This controller will only have power over whats happening inside our '<div>'. We will refer to this domain as scope.
 
  Lets run the app and see what happens. The application will run without obvious problems. Now if we open the developer tools and take a look at the console we are going to see an error. This error is telling us the controller we are trying to use, it is not yet defined.
 
