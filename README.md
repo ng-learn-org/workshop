@@ -147,6 +147,33 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
  Now that we know our AC, we need to write our first unit test. Under test lets create a folder spec and a subfolder called controllers. And inside lets create a file called welcomeControllerSpec.coffee
 
+  ``` coffeescript
+  describe "Controller: WelcomeController", ->
+
+    # load the controller's module
+    beforeEach module("myStoreApp")
+
+    welcomeController = scope = undefined
+
+    # Initialize the controller and a mock scope
+    beforeEach inject(($controller, $rootScope) ->
+      scope = $rootScope.$new()
+
+      scope.profile =
+        firstName: "Santiago"
+        lastName: "Esteva"
+
+      welcomeController = $controller("welcomeController",
+        $scope: scope
+      )
+    )
+
+    it "should attach a list of awesomeThings to the scope", ->
+      expect(scope.fullName).toBe "Santiago Esteva"
+  ```
+
+
+
 
 
 

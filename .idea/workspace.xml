@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +53,16 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="125" selection-start="5435" selection-end="5435" vertical-scroll-proportion="0.5777027">
+            <state line="171" column="5" selection-start="6313" selection-end="6313" vertical-scroll-proportion="0.8986486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcomeControllerSpec.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="36" selection-start="0" selection-end="557" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,8 +96,8 @@
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/app.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
-        <option value="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
         <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
+        <option value="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -152,6 +163,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,6 +476,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="36" selection-start="0" selection-end="557" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="33" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
@@ -452,7 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="125" selection-start="5435" selection-end="5435" vertical-scroll-proportion="0.5777027">
+        <state line="171" column="5" selection-start="6313" selection-end="6313" vertical-scroll-proportion="0.8986486">
           <folding />
         </state>
       </provider>
