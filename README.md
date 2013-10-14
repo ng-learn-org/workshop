@@ -10,6 +10,7 @@
     npm install -g bower
     bower install
 
+
 ### Step 0 - Setup the AngularJs App
 
     git checkout -f step-0
@@ -141,7 +142,11 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
     git checkout -f step-3
 
- If you get "Karma is not a task" or "Karma is not found". Please execute "npm install" on the terminal. If that does not work, please use "npm install grunt-karma --save-dev"
+ If you get "Karma is not a task" or "Karma is not found". Please execute
+
+    npm install grunt-karma --save-dev
+    npm install karma-ng-scenario --save-dev
+
 
  **AC:** As a User, when I open myStore home page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
 
