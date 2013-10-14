@@ -196,14 +196,14 @@ As a best practice we keep the same names, specially when we deal with Angular o
   How come we still see {{fullName}}? That's because we don't have a preexisting profile object. Lets cover this with some stubbed data. Open app.coffee and update the run block.
 
   ``` coffeescript
-  angular.module("myStoreApp", []).
-    run ($rootScope) ->
-      console.log 'Its alive!'
+    angular.module("myStoreApp", []).
+      run ($rootScope) ->
+        console.log 'Its alive!'
 
-      # Prexisting profile object
-      $rootScope.profile =
-        firstName: "Santiago"
-        lastName: "Esteva"
+        # Prexisting profile object
+        $rootScope.profile =
+          firstName: "Santiago"
+          lastName: "Esteva"
   ```
 
   Lets refresh the app. You should now see "Welcome to the AngularJS World, Santiago Esteva".
