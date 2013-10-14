@@ -118,6 +118,23 @@ As a best practice we keep the same names, specially when we deal with Angular o
  Let's open the application and see what we have. The application should not have any error and now you should see "Welcome to the AngularJS World, Santiago"
 
 
+- Finally, lets make a few more changes on our index.html.
+
+ ```
+ <div ng-controller="welcomeController">
+     Welcome to the AngularJS World, {{userName}}
+     <hr>
+     <p>Inside the controller: <input name="userName" ng-model="userName"/></p>
+ </div>
+ <hr>
+ <div>
+     <p>Outside the controller: <input name="userName" ng-model="userName"/></p>
+ </div>
+ ```
+
+ Now, lets play with the inputs and lets see what happens. As you can see the first input generates the Bidirectional binding between the input and the welcome phrase.
+ This is Angular magic. the userName variable exists under an specific scope, the controller's scope. This is why the input that exists outside our controller does not change and when we enter text it does not change the welcome phrase.
+
 
 
 

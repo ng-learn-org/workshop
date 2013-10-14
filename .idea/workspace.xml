@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381716352601" ignored="false" />
-    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381760558512" ignored="false" />
+    <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381760970281" ignored="false" />
+    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381764877114" ignored="false" />
     <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381759279638" ignored="false" />
     <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381759545231" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +33,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="41" selection-start="229" selection-end="246" vertical-scroll-proportion="-6.875">
+            <state line="12" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -50,7 +51,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="164" selection-start="3870" selection-end="3870" vertical-scroll-proportion="0.7635135">
+            <state line="135" column="1" selection-start="4822" selection-end="4822" vertical-scroll-proportion="0.9324324">
               <folding />
             </state>
           </provider>
@@ -78,8 +79,8 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -362,13 +363,6 @@
         <state line="66" column="0" selection-start="3177" selection-end="3334" vertical-scroll-proportion="0.7672282" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="229" selection-end="246" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="73" selection-end="190" vertical-scroll-proportion="-2.4">
@@ -376,9 +370,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="164" selection-start="3870" selection-end="3870" vertical-scroll-proportion="0.7635135">
+        <state line="135" column="1" selection-start="4822" selection-end="4822" vertical-scroll-proportion="0.9324324">
           <folding />
         </state>
       </provider>
