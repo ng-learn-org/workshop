@@ -145,7 +145,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
  **Assumptions:** The application already has an object called profile that contains firstName and lastName.
 
- - Development Flow - Unit Test: Now that we know our AC, we need to write our first unit test. Under test lets create a folder spec and a subfolder called controllers. And inside lets create a file called welcomeControllerSpec.coffee
+ - **Development Flow - Unit Test:** Now that we know our AC, we need to write our first unit test. Under test lets create a folder spec and a subfolder called controllers. And inside lets create a file called welcomeControllerSpec.coffee
 
   ``` coffeescript
   describe "Controller: WelcomeController", ->
