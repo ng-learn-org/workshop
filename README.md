@@ -112,8 +112,9 @@
  **Notes:** A few things have happened.
     - We just created a new controller inside our module. We named it "welcomeController".
     - When we use a module we do not declare its dependencies. We declare dependencies only the first time we defined the module.
-    - After naming our controller, we pass its dependencies ' ["$scope", ' and then we defined the name these dependencies will have locally ' ($scope) -> '. This means that we could have renamed them to whatever we wanted. Example:  angular.module("myStoreApp").controller "welcomeController", ["$scope", (localScope) -> .
-As a best practice we keep the same names, specially when we deal with Angular objects.
+    - After naming our controller, we pass its dependencies ' ["$scope", ' and then we defined the name these dependencies will have locally ' ($scope) -> '. This means that we could have renamed them to whatever we wanted.
+        Example:  angular.module("myStoreApp").controller "welcomeController", ["$scope", (localScope) -> .
+    As a best practice we keep the same names, specially when we deal with Angular objects.
 
  Let's open the application and see what we have. The application should not have any error and now you should see "Welcome to the AngularJS World, Santiago"
 
