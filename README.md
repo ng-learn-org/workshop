@@ -36,7 +36,7 @@
 
 - Start the app
 
-    ```    
+    ``` coffeescript
     grunt server
     ```
 
@@ -54,7 +54,7 @@
 
 - Create app.coffee inside app folder and define our application in app.coffee
 
-    ```
+    ``` coffeescript
     angular.module("myStoreApp", [])
     ```
 
@@ -78,7 +78,7 @@
 - To prove our point, we will add a Run block to our module. Run blocks are the closest thing in Angular to the main method in Java.
   It will be executed after all the dependencies have been injected. Open app.coffee and make the following modification
 
-    ```
+    ``` coffeescript
     angular.module("myStoreApp", []).
       run ->
         console.log 'Its alive!'
