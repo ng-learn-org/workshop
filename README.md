@@ -84,6 +84,16 @@
         console.log 'Its alive!'
     ```
 
+  Lets run grunt server in the terminal. This will open a browser with out application. Lets open the developer tools and on the console you should find "Its alive!".
+  Congratulations. You've created your first Angular module.
+
+### Step 2 - Defining our first controller
+
+    git checkout -f step-2
+
+
+
+
 
 
 
