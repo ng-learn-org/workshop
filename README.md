@@ -141,7 +141,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
  If you get "Karma is not a task" or "Karma is not found". Please execute "npm install grunt-karma --save-dev" on the terminal.
 
- **AC:** As a User, when I open myStore home page, then I should see the phrase "Welcome to the AngularJS World, [fullName]".
+ **AC:** As a User, when I open myStore home page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
 
  **Assumptions:** The application already has an object called profile that contains firstName and lastName.
 
