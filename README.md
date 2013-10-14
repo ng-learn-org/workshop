@@ -103,7 +103,7 @@
 
  - Lets define our controller. Open app.coffee and make the following modifications.
 
- ```
+ ``` coffeescript
  angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope) ->
    $scope.userName = "Santiago Esteva"
  ]
