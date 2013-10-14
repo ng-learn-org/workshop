@@ -176,7 +176,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
   Lets run the tests, go to the console and execute 'grunt test'. You will see "Expected undefined to be 'Santiago Esteva'." and "PhantomJS 1.9.2 (Linux): Executed 1 of 1 (1 FAILED) ERROR (0.183 secs / 0.009 secs)"
   That's actually great. This is the expected output. Now we have a failing unit test that we can code against. Kudos!
 
-  - **Development Flow - Coding:** Now we will write the minimum amount of code to make the unit test pass. In our app.coffee we will create the function to compose the fullName
+ - **Development Flow - Coding:** Now we will write the minimum amount of code to make the unit test pass. In our app.coffee we will create the function to compose the fullName
 
   ``` coffeescript
   angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)->
