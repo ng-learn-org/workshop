@@ -93,7 +93,7 @@
 
 - Now we are going to create a controller and provide our application some behaviour. Open index.html and lets add ng-controller to our div.
 
- ```
+ ``` html
  <div ng-controller="welcomeController">Welcome to the AngularJS World, {{userName}}</div>
  ```
 
@@ -120,7 +120,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
 - Finally, lets make a few more changes on our index.html.
 
- ```
+ ``` html
  <div ng-controller="welcomeController">
      Welcome to the AngularJS World, {{userName}}
      <hr>
