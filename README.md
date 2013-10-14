@@ -180,9 +180,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
   ``` coffeescript
   angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)->
-
-    $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
-
+      $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
   ]
   ```
 
