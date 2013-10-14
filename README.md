@@ -142,6 +142,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
  If you get "Karma is not a task" or "Karma is not found". Please execute "npm install grunt-karma --save-dev" on the terminal.
 
  **AC:** As a User, when I open myStore home page, then I should see the phrase "Welcome to the AngularJS World, [fullName]".
+
  **Assumptions:** The application already has an object called profile that contains firstName and lastName.
 
  Now that we know our AC, we need to write our first unit test. Under test lets create a folder spec and a subfolder called controllers. And inside lets create a file called welcomeControllerSpec.coffee
