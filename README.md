@@ -141,8 +141,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
 ### Step 3 - Our first Requirement
 
     git checkout -f step-3
-
- If you get "Karma is not a task" or "Karma is not found". Please execute
+If you get "Karma is not a task" or "Karma is not found". Please execute
 
     npm install grunt-karma --save-dev
     npm install karma-ng-scenario --save-dev
