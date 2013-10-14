@@ -40,7 +40,7 @@
     grunt server
     ```
 
-  note: The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
+  **Notes:** The application should say "Welcome to the AngularJS World," but the "{{userName}}" portion should not be visible. Angular has kicked in and it does not display it because that variable is not binded to anything, yet!
 
 ### Step 1 - Defining our first module
 
@@ -58,7 +58,7 @@
     angular.module("myStoreApp", [])
     ```
 
-  note: Here we define a module named 'myStoreApp'. The second parameter it is an array of dependencies required for this module.
+  **Notes:** Here we define a module named 'myStoreApp'. The second parameter it is an array of dependencies required for this module.
 
 - Add app.js to our index.html so the browser will load it
 
@@ -73,7 +73,7 @@
     </body>
     ```
 
-  note: we add our js file wrapped in a 'build comment' so our toolchain converts it from coffee script to javascript.
+  **Notes:** we add our js file wrapped in a 'build comment' so our toolchain converts it from coffee script to javascript.
 
 - To prove our point, we will add a Run block to our module. Run blocks are the closest thing in Angular to the main method in Java.
   It will be executed after all the dependencies have been injected. Open app.coffee and make the following modification
@@ -97,7 +97,7 @@
  <div ng-controller="welcomeController">Welcome to the AngularJS World, {{userName}}</div>
  ```
 
- **notes:** When you do this, Angular will look for a controller - inside of our myStoreApp module - called welcomeController. This controller will only have power over whats happening inside our 'div'. We will refer to this domain as scope.
+ **Notes:** When you do this, Angular will look for a controller - inside of our myStoreApp module - called welcomeController. This controller will only have power over whats happening inside our 'div'. We will refer to this domain as scope.
 
  Lets run the app and see what happens. The application will run without obvious problems. Now if we open the developer tools and take a look at the console we are going to see an error. This error is telling us the controller we are trying to use, it is not yet defined.
 
@@ -109,7 +109,7 @@
  ]
  ```
 
- **notes:** A few things have happened.
+ **Notes:** A few things have happened.
     - We just created a new controller inside our module. We named it "welcomeController".
     - When we use a module we do not declare its dependencies. We declare dependencies only the first time we defined the module.
     - After naming our controller, we pass its dependencies ' ["$scope", ' and then we defined the name these dependencies will have locally ' ($scope) -> '. This means that we could have renamed them to whatever we wanted. Example:  angular.module("myStoreApp").controller "welcomeController", ["$scope", (localScope) -> .
