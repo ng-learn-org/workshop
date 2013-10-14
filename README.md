@@ -214,9 +214,9 @@ As a best practice we keep the same names, specially when we deal with Angular o
     git checkout -f step-4
 
  **AC:**
-    - As a User, when I open myStore home page, then I should see the login form requesting username and password.
-    - As a User, when I fill in the login form, then I should be redirected to my welcome page.
-    - As a User, when I get to my welcome page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
+    1. As a User, when I open myStore home page, then I should see the login form requesting username and password.
+    2. As a User, when I fill in the login form, then I should be redirected to my welcome page.
+    3. As a User, when I get to my welcome page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
 
  **Assumptions:** All login attempts are successful.
 

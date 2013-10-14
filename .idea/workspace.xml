@@ -7,7 +7,7 @@
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381783499007" ignored="false" />
-    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381783891601" ignored="false" />
+    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381783999576" ignored="false" />
     <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381782908888" ignored="false" />
     <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381771420657" ignored="false" />
     <file path="/welcomeControllerSpec.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381771754467" ignored="false" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="4" selection-start="8648" selection-end="8648" vertical-scroll-proportion="0.7128378">
+            <state line="218" column="6" selection-start="8652" selection-end="8652" vertical-scroll-proportion="0.8648649">
               <folding />
             </state>
           </provider>
@@ -472,7 +472,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="4" selection-start="8648" selection-end="8648" vertical-scroll-proportion="0.7128378">
+        <state line="218" column="6" selection-start="8652" selection-end="8652" vertical-scroll-proportion="0.8648649">
           <folding />
         </state>
       </provider>
