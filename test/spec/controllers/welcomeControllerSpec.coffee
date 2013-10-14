@@ -18,6 +18,6 @@ describe "Controller: WelcomeController", ->
     )
   )
 
-  it "should compose the fullName based on firstName and lastName attributed from prexisting profile object", ->
+  it "should compose the fullName based on firstName and lastName attributes from prexisting profile object", ->
     expect(scope.fullName).toBe "Santiago Esteva"
 
