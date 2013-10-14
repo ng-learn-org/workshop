@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" afterPath="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381760970281" ignored="false" />
-    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381769650706" ignored="false" />
+    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381769895986" ignored="false" />
     <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381759279638" ignored="false" />
     <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381768545964" ignored="false" />
     <file path="/welcomeControllerSpec.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381768460911" ignored="false" />
@@ -49,19 +48,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="78" selection-start="6358" selection-end="6358" vertical-scroll-proportion="0.0">
+            <state line="176" column="2" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.847973">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcomeControllerSpec.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="welcomeControllerSpec.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="76" selection-start="520" selection-end="520" vertical-scroll-proportion="0.33296338">
+            <state line="20" column="76" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,8 +95,8 @@
         <option value="$PROJECT_DIR$/test/spec/controllers/app.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -482,16 +481,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="78" selection-start="6358" selection-end="6358" vertical-scroll-proportion="0.0">
+        <state line="20" column="76" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="76" selection-start="520" selection-end="520" vertical-scroll-proportion="0.33296338">
+        <state line="176" column="2" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.847973">
           <folding />
         </state>
       </provider>

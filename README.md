@@ -172,6 +172,12 @@ As a best practice we keep the same names, specially when we deal with Angular o
       expect(scope.fullName).toBe "Santiago Esteva"
   ```
 
+  Lets run the tests, go to the console and execute 'grunt test'. You will see "Expected undefined to be 'Santiago Esteva'." and "PhantomJS 1.9.2 (Linux): Executed 1 of 1 (1 FAILED) ERROR (0.183 secs / 0.009 secs)"
+  That's actually great. This is the expected output. Now we have a failing unit test that we can code against. Kudos!
+
+
+
+
 
 
 
