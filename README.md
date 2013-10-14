@@ -99,7 +99,25 @@
 
  notes: When you do this, Angular will look for a controller - inside of our myStoreApp module - called welcomeController. This controller will only have power over whats happening inside our <div>. We will refer to this domain as scope.
 
- Lets run the app and see what happens. The application will run without obvious problems.
+ Lets run the app and see what happens. The application will run without obvious problems. Now if we open the developer tools and take a look at the console we are going to see an error. This error is telling us the controller we are trying to use, it is not yet defined.
+
+ - Lets define our controller. Open app.coffee and make the following modifications.
+
+ ```
+ angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope) ->
+
+   $scope.userName = "Santiago Esteva"
+
+ ]
+ ```
+
+ notes: A few things have happened. We just created a new controller inside our module. We named it "welcomeController. When we use a module we do not declare its dependencies. We declare dependencies only the first tmie we defined it.
+  After naming our controller, we pass its dependencies ' ["$scope", ' and then we defined the name these dependencies will have locally ' ($scope) -> '. This means that we could have renamed them to whatever we wanted. Example:  angular.module("myStoreApp").controller "welcomeController", ["$scope", (localScope) -> .
+  As a best practice we keep the same names, specially when we deal with Angular objects.
+
+ Let's open the application and see what we have. The application should not have any error and now you should see "Welcome to the AngularJS World, Santiago"
+
+
 
 
 
