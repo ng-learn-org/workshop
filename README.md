@@ -209,7 +209,19 @@ As a best practice we keep the same names, specially when we deal with Angular o
   **Notes:** This actually brings up an interesting subject. When we created the myStoreApp, Angular created a $rootScope. This is parent of all scopes. At the run block, we instructed Angular to inject an object Profile with certain attributes.
   Our welcome phrase lives inside the welcomeController's scope. All scopes inherit from its parent and ultimately from $rootScope. This is why we can refer to $scope.profile.firstName in our controller.
 
+### Step 4- Our second Requirement
 
+    git checkout -f step-4
+
+ **AC:**
+    - As a User, when I open myStore home page, then I should see the login form requesting username and password.
+    - As a User, when I fill in the login form, then I should be redirected to my welcome page.
+    - As a User, when I get to my welcome page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
+
+ **Assumptions:** All login attempts are successful.
+
+ - **Development Flow - Unit Test:**
+ - **Development Flow - Coding:**
 
 
 
