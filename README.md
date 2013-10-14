@@ -84,12 +84,23 @@
         console.log 'Its alive!'
     ```
 
-  Lets run grunt server in the terminal. This will open a browser with out application. Lets open the developer tools and on the console you should find "Its alive!".
+  Lets run 'grunt server' in the terminal. This will open a browser with out application. Lets open the developer tools and on the console you should find "Its alive!".
   Congratulations. You've created your first Angular module.
 
 ### Step 2 - Defining our first controller
 
     git checkout -f step-2
+
+- Now we are going to create a controller and provide our application some behaviour. Open index.html and lets add ng-controller to our div.
+
+ ```
+ <div ng-controller="welcomeController">Welcome to the AngularJS World, {{userName}}</div>
+ ```
+
+ notes: When you do this, Angular will look for a controller - inside of our myStoreApp module - called welcomeController. This controller will only have power over whats happening inside our <div>. We will refer to this domain as scope.
+
+ Lets run the app and see what happens. The application will run without obvious problems.
+
 
 
 

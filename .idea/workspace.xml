@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381197491161" ignored="false" />
-    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381715909051" ignored="false" />
+    <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381716352601" ignored="false" />
+    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381716680839" ignored="false" />
     <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381715745260" ignored="false" />
     <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381415157723" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +33,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="449" selection-end="449" vertical-scroll-proportion="-11.25">
+            <state line="21" column="22" selection-start="502" selection-end="502" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -41,7 +42,7 @@
       <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+            <state line="2" column="31" selection-start="71" selection-end="71" vertical-scroll-proportion="-1.2">
               <folding />
             </state>
           </provider>
@@ -50,7 +51,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="26" selection-start="2442" selection-end="2442" vertical-scroll-proportion="0.68619245">
+            <state line="101" column="92" selection-start="3019" selection-end="3019" vertical-scroll-proportion="0.7280335">
               <folding />
             </state>
           </provider>
@@ -77,9 +78,9 @@
         <option value="$PROJECT_DIR$/app/yeoman_index.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -342,21 +343,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+        <state line="2" column="31" selection-start="71" selection-end="71" vertical-scroll-proportion="-1.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="449" selection-end="449" vertical-scroll-proportion="-11.25">
+        <state line="21" column="22" selection-start="502" selection-end="502" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="26" selection-start="2442" selection-end="2442" vertical-scroll-proportion="0.68619245">
+        <state line="101" column="92" selection-start="3019" selection-end="3019" vertical-scroll-proportion="0.7280335">
           <folding />
         </state>
       </provider>
