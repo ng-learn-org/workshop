@@ -157,11 +157,12 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
     # Initialize the controller and a mock scope
     beforeEach inject(($controller, $rootScope) ->
-      scope = $rootScope.$new()
 
-      scope.profile =
-        firstName: "Santiago"
-        lastName: "Esteva"
+      $rootScope.profile =
+        firstName: "First"
+        lastName: "Last"
+
+      scope = $rootScope.$new()
 
       welcomeController = $controller("welcomeController",
         $scope: scope
@@ -169,11 +170,54 @@ As a best practice we keep the same names, specially when we deal with Angular o
     )
 
     it "should compose the fullName based on firstName and lastName attributes from prexisting profile object", ->
-      expect(scope.fullName).toBe "Santiago Esteva"
+      expect(scope.fullName).toBe "First Last"
   ```
 
   Lets run the tests, go to the console and execute 'grunt test'. You will see "Expected undefined to be 'Santiago Esteva'." and "PhantomJS 1.9.2 (Linux): Executed 1 of 1 (1 FAILED) ERROR (0.183 secs / 0.009 secs)"
   That's actually great. This is the expected output. Now we have a failing unit test that we can code against. Kudos!
+
+  - **Development Flow - Coding:** Now we will write the minimum amount of code to make the unit test pass. In our app.coffee we will create the function to compose the fullName
+
+  ``` coffeescript
+  angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)->
+
+    $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
+
+  ]
+  ```
+
+  The business logic is covered. Lets make the changes on the UI. Go to index.html and update the welcome phrase div.
+
+  ``` html
+  Welcome to the AngularJS World, {{fullName}}
+  ```
+
+  Lets run the app with 'grunt server'.
+  How come we still see {{fullName}}? That's because we don't have a preexisting profile object. Lets cover this with some stubbed data. Open app.coffee and update the run block.
+
+  ``` coffeescript
+  angular.module("myStoreApp", []).
+    run ($rootScope) ->
+      console.log 'Its alive!'
+
+      # Prexisting profile object
+      $rootScope.profile =
+        firstName: "Santiago"
+        lastName: "Esteva"
+  ```
+
+  Lets refresh the app. You should now see "Welcome to the AngularJS World, Santiago Esteva".
+
+  **Notes:** This actually brings up an interesting subject. When we created the myStoreApp, Angular created a $rootScope. This is parent of all scopes. At the run block, we instructed Angular to inject an object Profile with certain attributes.
+  Our welcome phrase lives inside the welcomeController's scope. All scopes inherit from its parent and ultimately from $rootScope. This is why we can refer to $scope.profile.firstName in our controller.
+
+
+
+
+
+
+
+
 
 
 

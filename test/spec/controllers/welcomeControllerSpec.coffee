@@ -7,11 +7,12 @@ describe "Controller: WelcomeController", ->
 
   # Initialize the controller and a mock scope
   beforeEach inject(($controller, $rootScope) ->
-    scope = $rootScope.$new()
 
-    scope.profile =
-      firstName: "Santiago"
-      lastName: "Esteva"
+    $rootScope.profile =
+      firstName: "First"
+      lastName: "Last"
+
+    scope = $rootScope.$new()
 
     welcomeController = $controller("welcomeController",
       $scope: scope
@@ -19,5 +20,5 @@ describe "Controller: WelcomeController", ->
   )
 
   it "should compose the fullName based on firstName and lastName attributes from prexisting profile object", ->
-    expect(scope.fullName).toBe "Santiago Esteva"
+    expect(scope.fullName).toBe "First Last"
 
