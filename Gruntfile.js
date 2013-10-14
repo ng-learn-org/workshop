@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         tasks: ['coffee:dist']
       },
       coffeeTest: {
-        files: ['test/spec/{,*/}*.coffee'],
+        files: ['test/**/*.coffee'],
         tasks: ['coffee:test']
       },
       compass: {
@@ -316,6 +316,9 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'karma.conf.js',
         singleRun: true
+      },
+      e2e: {
+        configFile: 'karma-e2e.conf.js'
       }
     },
     cdnify: {

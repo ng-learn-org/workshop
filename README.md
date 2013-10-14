@@ -7,6 +7,8 @@
     git clone https://github.com/ng-learn-org/workshop.git
     cd workshop
     npm install
+    npm install -g bower
+    bower install
 
 ### Step 0 - Setup the AngularJs App
 
@@ -139,7 +141,7 @@ As a best practice we keep the same names, specially when we deal with Angular o
 
     git checkout -f step-3
 
- If you get "Karma is not a task" or "Karma is not found". Please execute "npm install grunt-karma --save-dev" on the terminal.
+ If you get "Karma is not a task" or "Karma is not found". Please execute "npm install" on the terminal. If that does not work, please use "npm install grunt-karma --save-dev"
 
  **AC:** As a User, when I open myStore home page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
 
