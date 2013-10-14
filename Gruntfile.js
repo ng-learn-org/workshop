@@ -35,7 +35,7 @@ module.exports = function (grunt) {
       },
       coffeeTest: {
         files: ['test/**/*.coffee'],
-        tasks: ['coffee:test']
+        tasks: ['coffee:test', 'coffee:teste2e']
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -153,6 +153,15 @@ module.exports = function (grunt) {
           src: '{,*/}*.coffee',
           dest: '.tmp/spec',
           ext: '.js'
+        }]
+      },
+      teste2e: {
+        files: [{
+            expand: true,
+            cwd: 'test/e2e',
+            src: '{,*/}*.coffee',
+            dest: '.tmp/e2e',
+            ext: '.js'
         }]
       }
     },
