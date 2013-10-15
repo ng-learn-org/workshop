@@ -11,8 +11,10 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            '.tmp/e2e/*.js',
-            'app/views/**/*.html'
+            'app/bower_components/angular/angular.js',
+            'app/bower_components/angular-mocks/angular-mocks.js',
+            'app/views/**/*.html',
+            '.tmp/e2e/*.js'
         ],
 
         // list of files / patterns to exclude
@@ -23,7 +25,7 @@ module.exports = function(config) {
 
         // level of logging
         // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
 
 
         // enable / disable watching file and executing tests whenever any file changes
@@ -45,13 +47,11 @@ module.exports = function(config) {
         // if true, it capture browsers, run tests and exit
         singleRun: true,
 
-        captureTimeout: 5000,
-
         // Uncomment the following lines if you are using grunt's server to run the tests
-//        proxies: {
-//           '/': 'http://localhost:9000/'
-//        },
+        proxies: {
+           '/': 'http://localhost:9000/'
+        },
         // URL root prevent conflicts with the site root
-//        urlRoot: '/_karma_/'
+        urlRoot: '_karma_'
     });
 };
