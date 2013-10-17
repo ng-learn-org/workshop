@@ -215,7 +215,7 @@ If you get "Karma is not a task" or "Karma is not found". Please execute
   **Notes:** This actually brings up an interesting subject. When we created the myStoreApp, Angular created a $rootScope. This is parent of all scopes. At the run block, we instructed Angular to inject an object Profile with certain attributes.
   Our welcome phrase lives inside the welcomeController's scope. All scopes inherit from its parent and ultimately from $rootScope. This is why we can refer to $scope.profile.firstName in our controller.
 
-### Step 4- Our second Requirement
+### Step 4 - Our second Requirement
 
     git checkout -f step-4
 
