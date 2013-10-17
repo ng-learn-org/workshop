@@ -235,7 +235,6 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    beforeEach ->
      browser().navigateTo "/"
-     pause()
 
    it "should be the first page", ->
      expect(element("h1").text()).toBe "Login"
@@ -309,9 +308,9 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  ``` coffeescript
  # When the url matches / then we inject the login html
  $routeProvider.when("/",
-   templateUrl: "views/login.html"
+     templateUrl: "views/login.html"
  ).when("/welcome",
-   templateUrl: "views/welcome.html"
+     templateUrl: "views/welcome.html"
  )
  ```
 
