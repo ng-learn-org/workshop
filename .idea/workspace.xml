@@ -2,21 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma-e2e.conf.js" afterPath="$PROJECT_DIR$/karma-e2e.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/e2e/loginScenario.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/welcome.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.coffee" afterPath="$PROJECT_DIR$/app/scripts/app.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381783499007" ignored="false" />
-    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381786986994" ignored="false" />
-    <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381786848073" ignored="false" />
-    <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381771420657" ignored="false" />
+    <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382019154721" ignored="false" />
+    <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382022084588" ignored="false" />
+    <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381958689440" ignored="false" />
+    <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382021945508" ignored="false" />
     <file path="/welcomeControllerSpec.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381771754467" ignored="false" />
-    <file path="/loginFlow.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381784742000" ignored="false" />
+    <file path="/loginFlow.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948941265" ignored="false" />
     <file path="/Gruntfile.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381860574998" ignored="false" />
     <file path="/karma-e2e.conf.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381846743363" ignored="false" />
     <file path="/loginScenario.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381860377701" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/bofa-index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/karma-e2e.conf.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381937649005" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/karma-e2e-cars.conf.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381937921131" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/test/e2e/cars/carSearchScenarios.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381937893119" ignored="false" />
+    <file path="/carSearchScenarios.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381937823886" ignored="false" />
+    <file path="/karma-e2e-cars.conf.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381937918098" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/templates/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381939152052" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/scripts/directives/validCreditCard.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381939197170" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/appMgrCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948647649" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/travelerDetailsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/reviewAndContinueCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948647649" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/services/wtpnAdapter.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948647649" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/flightsResultsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948647649" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsTravelerDetailsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/seatSelectionCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948647649" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/services/hotelsService.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/carsTravelerDetailsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/carsBillingInfoCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsReviewCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/searchFormCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948647649" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsBillingInformationCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelDetailsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/dist/views/tripdetails.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381940219726" ignored="false" />
+    <file path="/tripdetails.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381940219156" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/views/tripDetails.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
+    <file path="/tripDetails.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381957993366" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/views/selectedHotelDetailFeeCheckout.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
+    <file path="/selectedHotelDetailFeeCheckout.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381940402656" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/scripts/controllers/tripDetailsCtrl.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
+    <file path="/tripDetailsCtrl.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959004617" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/tripDetailsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/test/spec/controllers/tripDetailsCtrlSpec.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
+    <file path="/tripDetailsCtrlSpec.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381958799249" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/directives/tripsListDirective.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381951632918" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/directives/enforceConstraintsDirective.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381951632918" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/test-results.xml" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/carsResultsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsCongratulationsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/carsReviewCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsSearchCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/carsDetailsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsResultsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/hotelsChangeHotelCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381955278833" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/congratulationsCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/scripts/controllers/billingInformationCtrl.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381959425837" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/.tmp/test/spec_coffee.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381953136760" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/stubs/postSale/tripretrieve-hotel.json" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381953351787" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/scripts/fakeBackend.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381958250440" ignored="false" />
+    <file path="/fakeBackend.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381953556219" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/app/scripts/directives/hotelDetailsDirective.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381954976304" ignored="false" />
+    <file path="/a.dummy" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381958119426" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/Gruntfile.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
+    <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/gruntTasksConfig/htmlbuild.json" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +92,62 @@
     <favorites_list name="workshop" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="4" selection-start="209" selection-end="228" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="306" selection-end="365" vertical-scroll-proportion="-5.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="319" column="0" selection-start="12795" selection-end="12795" vertical-scroll-proportion="0.9662162">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="-1.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginScenario.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/e2e/loginScenario.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="166" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -53,22 +165,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/yeoman_index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/test/spec/welcomeControllerSpec.coffee" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/test/spec/controllers/app.js" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/welcomeControllerSpec.coffee" />
-        <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/test/e2e/loginFlow.coffee" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/e2e/loginScenario.coffee" />
         <option value="$PROJECT_DIR$/karma-e2e.conf.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/test/e2e/loginFlow.coffee" />
+        <option value="$PROJECT_DIR$/app/views/login.html" />
+        <option value="$PROJECT_DIR$/app/views/welcome.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -104,6 +216,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -136,9 +249,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,6 +309,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/e2e" />
       <recent name="$PROJECT_DIR$/test/spec/controllers" />
     </key>
   </component>
@@ -206,12 +369,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18522428" sideWeight="0.670247" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18522428" sideWeight="0.670247" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -287,18 +450,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/yeoman_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="0" selection-start="3177" selection-end="3334" vertical-scroll-proportion="0.7672282" />
@@ -316,23 +467,9 @@
         <state line="15" column="73" selection-start="356" selection-end="356" vertical-scroll-proportion="0.25684932" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="89" selection-start="279" selection-end="279" vertical-scroll-proportion="0.15410958" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="508" selection-end="508" vertical-scroll-proportion="0.37628278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bower/node_modules/request/node_modules/hawk/test/readme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -342,18 +479,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="5224" selection-end="5224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="8" selection-start="1694" selection-end="1715" vertical-scroll-proportion="0.76581573">
-          <folding />
-        </state>
+        <state line="58" column="8" selection-start="1694" selection-end="1715" vertical-scroll-proportion="0.76581573" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/karma-ng-scenario/lib/angular-scenario.js">
@@ -365,6 +493,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="57" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.45017183" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/karma-e2e.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="74" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.6503885">
@@ -372,16 +505,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/test/e2e/loginScenario.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="57" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.45017183">
+        <state line="0" column="0" selection-start="0" selection-end="166" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/e2e/loginScenario.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="101" selection-start="100" selection-end="100" vertical-scroll-proportion="0.06849315">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="209" selection-end="228" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="306" selection-end="365" vertical-scroll-proportion="-5.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="319" column="0" selection-start="12795" selection-end="12795" vertical-scroll-proportion="0.9662162">
           <folding />
         </state>
       </provider>

@@ -226,6 +226,99 @@ If you get "Karma is not a task" or "Karma is not found". Please execute
 
 **Assumptions:** All login attempts are successful.
 
+AC 1 seems to require a change on the flow. We need to add another test to our test nest. For this change, a unit test will not do. Instead, we will do an E2E test. E2E should be considered the Angular keyword to describe Component or UI testing.
+
+ - **Development Flow - E2E Test:** In this case, we can create an E2E test to validate the first page we hit is the login page. Create a new folder under test. Lets call it e2e. Then create a new file called "loginScenario.coffee".
+
+ ``` coffeescript
+ describe "Login Flow", ->
+
+   beforeEach ->
+     browser().navigateTo "/"
+     pause()
+
+   it "should be the first page", ->
+     expect(element("h1").text()).toBe "Login"
+ ```
+
+ If we run 'grunt test' then all unit and e2e test will be executed. We now have a failing test.
+
+ - **Development Flow - Coding:**  Adding an H1 tag in our index.html would be enough to make this test go green. Since we are alraedy there, lets add a small form requesting a username and password.
+
+ ``` html
+ <div>
+     <h1>Login</h1>
+     <form>
+         <label>username</label><input name="username">
+         <label>password</label><input name="password">
+     </form>
+ </div>
+
+ <div ng-controller="welcomeController">
+     Welcome to the AngularJS World, {{fullName}}
+ </div>
+ ```
+
+ Lets run the app and see what we got. As you can see we now have the Login section and the welcome phrase all together on the same page. This is not the flow requested. Lets fix that. We are going to create two different views: one for the login page and one for the welcome page.
+
+ - Create a new file under app/views and call it 'login.html' and cut/paste the div containing the Login H1 and form.
+ - Create a new file under app/views and call it 'welcome.html' and cut/paste the div containing the welcome phrase.
+
+ If we run the app right now, nothing will be displayed since we have removed all the content from that index.html. Now we need to attach the views to our app flow. How do we do that?
+
+ - Step 1: In our index.html we will add a container for our views.
+
+ ``` html
+  <div ng-view></div>
+ ```
+ **Notes:** The ng-view directive is the one Angular will find and insert/remove/swap the views.
+
+ - Step 2: Now we need to tell Angular what view to include based on the url we are at. so if we are in '/' we want to display the login page. if we are at '/welcome' we want to display the welcome page. In order to that we will Routes to our main module 'myStoreApp'. Lets go to app.coffee and make the following modifications:
+
+ ``` coffeescript
+ # Define main module and its dependencies
+ angular.module('myStoreApp', [])
+
+ # Add configuration to the module; such as routes
+ angular.module("myStoreApp").config ($routeProvider) ->
+
+   # When the url matches / then we inject the login html
+   $routeProvider.when("/",
+     templateUrl: "views/login.html"
+   )
+
+ # Add a run block. This is executed only once when the app is bootstrapped.
+ angular.module("myStoreApp").run ($rootScope) ->
+     console.log 'Its alive!'
+
+     # Prexisting profile object
+     $rootScope.profile =
+       firstName: "Santiago"
+       lastName: "Esteva"
+
+ # Add a controller to our main module/
+ angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)->
+
+   $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
+
+ ]
+ ```
+
+ Now lets add a route for our welcome page.
+
+ ``` coffeescript
+ # When the url matches / then we inject the login html
+ $routeProvider.when("/",
+   templateUrl: "views/login.html"
+ ).when("/welcome",
+   templateUrl: "views/welcome.html"
+ )
+ ```
+
+ Lets run our app. 'grunt server' and we should find the login form being displayed. The url is 'http://localhost:9000/#/' The portion we should be paying attention to is '#/'. If we change the url manually to 'http://localhost:9000/#/welcome' the application will change the view and it will now display the welcome phrase only.
+
+
+
  - **Development Flow - Unit Test:**
  - **Development Flow - Coding:**
 
