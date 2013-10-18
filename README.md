@@ -226,6 +226,7 @@ If you get "Karma is not a task" or "Karma is not found". Please execute
 
 **Assumptions:** All login attempts are successful.
 
+### AC 1
 AC 1 seems to require a change on the flow. We need to add another test to our test nest. For this change, a unit test will not do. Instead, we will do an E2E test. E2E should be considered the Angular keyword to describe Component or UI testing.
 
  - **Development Flow - E2E Test:** In this case, we can create an E2E test to validate the first page we hit is the login page. Create a new folder under test. Lets call it e2e. Then create a new file called "loginScenario.coffee".
@@ -250,6 +251,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
      <form>
          <label>username</label><input name="username">
          <label>password</label><input name="password">
+         <button>Login</button>
      </form>
  </div>
 
@@ -315,8 +317,17 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  ```
 
  Lets run our app. 'grunt server' and we should find the login form being displayed. The url is 'http://localhost:9000/#/' The portion we should be paying attention to is '#/'. If we change the url manually to 'http://localhost:9000/#/welcome' the application will change the view and it will now display the welcome phrase only.
+ AC 1 seems to be covered. We are in a good state to commit our code. We have added value and left everything in a good position so somebody else could pick this up tomorrow.
 
 
+### AC 2
+
+"As a User, when I fill in the login form, then I should be redirected to my welcome page."
+
+It seems that once again, we could start with a flow interaction test. When I click on Login button, the application should redirect to the welcome page. We have two options to test this.
+We could extend our E2E test simulating the user has filled the form, click Login and expect the welcome view has been attached and the welcome phrase is now displayed.
+We can also write a unit test taking advantage we have access to the $location service, who is responsible for making that url change which ultimately produces the view change.
+Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute in 1-2 mins. Taking into account the validation is covered by both test, the economic option seems to be the best fit in this case.
 
  - **Development Flow - Unit Test:**
  - **Development Flow - Coding:**
