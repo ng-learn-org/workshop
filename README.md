@@ -354,7 +354,7 @@ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute
     ```
 
 
-If we run grunt test, we will get a message saying "Error: Argument 'loginController' is not a function, got undefined" Lets switch and code the minimum code to make this test green.
+    If we run grunt test, we will get a message saying "Error: Argument 'loginController' is not a function, got undefined" Lets switch and code the minimum code to make this test green.
 
  - **Development Flow - Coding:** Lets create a new controller inside our app. In our app.coffee lets add the new controller.
 
@@ -364,7 +364,7 @@ If we run grunt test, we will get a message saying "Error: Argument 'loginContro
     ]
     ```
 
-Run the tests again. Success!
+    Run the tests again. Success!
 
   - **Development Flow - Unit Test:** Lets add a new expectation in our test, so when we click the submit button the app is redirected to the welcome page.
 
@@ -391,7 +391,7 @@ Run the tests again. Success!
           expect(location.path()).toBe("/welcome")
     ```
 
-Run grunt test and you will see a new error: TypeError: 'undefined' is not a function (evaluating 'scope.submit()'). Switch!
+    Run grunt test and you will see a new error: TypeError: 'undefined' is not a function (evaluating 'scope.submit()'). Switch!
 
   - **Development Flow - Coding:** We will add a new function to our scope and use the location service to change the path.
 
@@ -404,8 +404,8 @@ Run grunt test and you will see a new error: TypeError: 'undefined' is not a fun
     ]
     ```
 
-Lets run the tests again...success!
-Are we missing something? Lets attach this new behaviour to our View. In out login.html we will give the control to our loginController and attach our submit function to out Login button.
+    Lets run the tests again...success!
+    Are we missing something? Lets attach this new behaviour to our View. In out login.html we will give the control to our loginController and attach our submit function to out Login button.
 
     ``` html
     <div ng-controller="loginController">
