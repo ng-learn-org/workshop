@@ -418,7 +418,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
         </form>
     </div>
     ```
-
+   Lets run the app with 'grunt server' and hit the Login button.
 
 
 
