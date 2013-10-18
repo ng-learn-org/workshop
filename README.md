@@ -405,7 +405,8 @@ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute
     ```
 
     Lets run the tests again...success!
-    Are we missing something? Lets attach this new behaviour to our View. In out login.html we will give the control to our loginController and attach our submit function to out Login button.
+    Are we missing something? Lets attach this new behaviour to our View.
+    In our login.html we will give the control to our loginController and attach our submit function to out Login button.
 
     ``` html
     <div ng-controller="loginController">
