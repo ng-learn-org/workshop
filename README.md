@@ -108,7 +108,7 @@
 
  ``` coffeescript
  angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope) ->
-   $scope.userName = "Santiago Esteva"
+     $scope.userName = "Santiago Esteva"
  ]
  ```
 
