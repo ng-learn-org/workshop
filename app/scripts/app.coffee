@@ -26,3 +26,10 @@ angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)
   $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
 
 ]
+
+angular.module("myStoreApp").controller "loginController", ["$scope","$location", ($scope, $location)->
+
+  $scope.submit = ()->
+    $location.path "/welcome"
+
+]

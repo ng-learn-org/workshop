@@ -331,8 +331,105 @@ We could extend our E2E test simulating the user has filled the form, click Logi
 We can also write a unit test taking advantage we have access to the $location service, who is responsible for making that url change which ultimately produces the view change.
 Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute in 1-2 mins. Taking into account the validation is covered by both test, the economic option seems to be the best fit in this case.
 
- - **Development Flow - Unit Test:**
- - **Development Flow - Coding:**
+ - **Development Flow - Unit Test:** Lets create a new test inside our spec/controllers folder. Lets call it "loginController.coffee"
+
+    ``` coffeescript
+    describe "Login Controller", ->
+
+      # load the controller's module
+      beforeEach module("myStoreApp")
+
+      loginController = scope = undefined
+
+      # Initialize the controller
+      beforeEach inject ($controller, $rootScope) ->
+        scope = $rootScope.$new()
+
+        loginController = $controller "loginController",
+          $scope: scope
+
+      describe "When clicking the submit button", ->
+
+        it "should go to the welcome page", ->
+    ```
+
+
+If we run grunt test, we will get a message saying "Error: Argument 'loginController' is not a function, got undefined" Lets switch and code the minimum code to make this test green.
+
+ - **Development Flow - Coding:** Lets create a new controller inside our app. In our app.coffee lets add the new controller.
+
+    ``` coffeescript
+    angular.module("myStoreApp").controller "loginController", ["$scope", ($scope)->
+
+    ]
+    ```
+
+Run the tests again. Success!
+
+  - **Development Flow - Unit Test:** Lets add a new expectation in our test, so when we click the submit button the app is redirected to the welcome page.
+
+    ``` coffeescript
+    describe "Login Controller", ->
+
+      # load the controller's module
+      beforeEach module("myStoreApp")
+
+      loginController = scope = location = undefined
+
+      # Initialize the controller
+      beforeEach inject ($controller, $rootScope, $location) ->
+        location = $location
+        scope = $rootScope.$new()
+
+        loginController = $controller "loginController",
+          $scope: scope
+
+      describe "When clicking the submit button", ->
+
+        it "should go to the welcome page", ->
+          scope.submit()
+          expect(location.path()).toBe("/welcome")
+    ```
+
+Run grunt test and you will see a new error: TypeError: 'undefined' is not a function (evaluating 'scope.submit()'). Switch!
+
+  - **Development Flow - Coding:** We will add a new function to our scope and use the location service to change the path.
+
+    ``` coffeescript
+    angular.module("myStoreApp").controller "loginController", ["$scope","$location", ($scope, $location)->
+
+      $scope.submit = ()->
+        $location.path "/welcome"
+
+    ]
+    ```
+
+Lets run the tests again...success!
+Are we missing something? Lets attach this new behaviour to our View. In out login.html we will give the control to our loginController and attach our submit function to out Login button.
+
+    ``` html
+    <div ng-controller="loginController">
+        <h1>Login</h1>
+        <form>
+            <label>username</label><input name="username">
+            <label>password</label><input name="password">
+            <button ng-click="submit()">Login</button>
+        </form>
+    </div>
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
