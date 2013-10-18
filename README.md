@@ -283,10 +283,10 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  # Add configuration to the module; such as routes
  angular.module("myStoreApp").config ($routeProvider) ->
 
-   # When the url matches / then we inject the login html
-   $routeProvider.when("/",
-     templateUrl: "views/login.html"
-   )
+     # When the url matches / then we inject the login html
+     $routeProvider.when("/",
+       templateUrl: "views/login.html"
+     )
 
  # Add a run block. This is executed only once when the app is bootstrapped.
  angular.module("myStoreApp").run ($rootScope) ->
@@ -300,7 +300,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  # Add a controller to our main module/
  angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)->
 
-   $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
+     $scope.fullName = $scope.profile.firstName + " " +  $scope.profile.lastName
 
  ]
  ```
