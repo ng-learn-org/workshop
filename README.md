@@ -322,6 +322,8 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
 ### AC 2
 
+    git checkout -f step-4b
+
 "As a User, when I fill in the login form, then I should be redirected to my welcome page."
 
 It seems that once again, we could start with a flow interaction test. When I click on Login button, the application should redirect to the welcome page. We have two options to test this.
