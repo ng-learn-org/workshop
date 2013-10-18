@@ -324,12 +324,12 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
     git checkout -f step-4b
 
-"As a User, when I fill in the login form, then I should be redirected to my welcome page."
+ "As a User, when I fill in the login form, then I should be redirected to my welcome page."
 
-It seems that once again, we could start with a flow interaction test. When I click on Login button, the application should redirect to the welcome page. We have two options to test this.
-We could extend our E2E test simulating the user has filled the form, click Login and expect the welcome view has been attached and the welcome phrase is now displayed.
-We can also write a unit test taking advantage we have access to the $location service, who is responsible for making that url change which ultimately produces the view change.
-Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute in 1-2 mins. Taking into account the validation is covered by both test, the economic option seems to be the best fit in this case.
+ It seems that once again, we could start with a flow interaction test. When I click on Login button, the application should redirect to the welcome page. We have two options to test this.
+ We could extend our E2E test simulating the user has filled the form, click Login and expect the welcome view has been attached and the welcome phrase is now displayed.
+ We can also write a unit test taking advantage we have access to the $location service, who is responsible for making that url change which ultimately produces the view change.
+ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute in 1-2 mins. Taking into account the validation is covered by both test, the economic option seems to be the best fit in this case.
 
  - **Development Flow - Unit Test:** Lets create a new test inside our spec/controllers folder. Lets call it "loginController.coffee"
 
@@ -354,7 +354,7 @@ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute
     ```
 
 
-    If we run grunt test, we will get a message saying "Error: Argument 'loginController' is not a function, got undefined" Lets switch and code the minimum code to make this test green.
+   If we run grunt test, we will get a message saying "Error: Argument 'loginController' is not a function, got undefined" Lets switch and code the minimum code to make this test green.
 
  - **Development Flow - Coding:** Lets create a new controller inside our app. In our app.coffee lets add the new controller.
 
@@ -364,9 +364,9 @@ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute
     ]
     ```
 
-    Run the tests again. Success!
+   Run the tests again. Success!
 
-  - **Development Flow - Unit Test:** Lets add a new expectation in our test, so when we click the submit button the app is redirected to the welcome page.
+ - **Development Flow - Unit Test:** Lets add a new expectation in our test, so when we click the submit button the app is redirected to the welcome page.
 
     ``` coffeescript
     describe "Login Controller", ->
@@ -391,9 +391,9 @@ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute
           expect(location.path()).toBe("/welcome")
     ```
 
-    Run grunt test and you will see a new error: TypeError: 'undefined' is not a function (evaluating 'scope.submit()'). Switch!
+   Run grunt test and you will see a new error: TypeError: 'undefined' is not a function (evaluating 'scope.submit()'). Switch!
 
-  - **Development Flow - Coding:** We will add a new function to our scope and use the location service to change the path.
+ - **Development Flow - Coding:** We will add a new function to our scope and use the location service to change the path.
 
     ``` coffeescript
     angular.module("myStoreApp").controller "loginController", ["$scope","$location", ($scope, $location)->
@@ -404,9 +404,9 @@ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute
     ]
     ```
 
-    Lets run the tests again...success!
-    Are we missing something? Lets attach this new behaviour to our View.
-    In our login.html we will give the control to our loginController and attach our submit function to out Login button.
+   Lets run the tests again...success!
+   Are we missing something? Lets attach this new behaviour to our View.
+   In our login.html we will give the control to our loginController and attach our submit function to out Login button.
 
     ``` html
     <div ng-controller="loginController">
