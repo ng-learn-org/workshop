@@ -33,3 +33,13 @@ angular.module("myStoreApp").controller "loginController", ["$scope","$location"
     $location.path "/welcome"
 
 ]
+
+angular.module("myStoreApp").service "profileService", [ ->
+
+  retrieveProfile = (user, password)->
+    profile =
+      fullName: "MyFullName"
+
+  login: retrieveProfile
+
+]

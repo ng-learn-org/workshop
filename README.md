@@ -224,7 +224,9 @@ If you get "Karma is not a task" or "Karma is not found". Please execute
   2. As a User, when I fill in the login form, then I should be redirected to my welcome page.
   3. As a User, when I get to my welcome page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}".
 
-**Assumptions:** All login attempts are successful.
+**Assumptions:**
+  1. All login attempts are successful.
+  2. When the user fills the form, our application needs to pass the username and password to our Profile Service. Our Profile Service returns a Profile containing user's Full Name.
 
 ### AC 1
 AC 1 seems to require a change on the flow. We need to add another test to our test nest. For this change, a unit test will not do. Instead, we will do an E2E test. E2E should be considered the Angular keyword to describe Component or UI testing.
@@ -418,7 +420,79 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
         </form>
     </div>
     ```
-   Lets run the app with 'grunt server' and hit the Login button.
+   Lets run the app with 'grunt server' and hit the Login button. AC 2 seems to be covered. Lets move to AC 3.
+
+### AC 3
+
+    git checkout -f step-4c
+
+ "As a User, when I get to my welcome page, then I should see the phrase "Welcome to the AngularJS World, {{fullName}}"."
+
+ **Assumptions:**
+   1. All login attempts are successful.
+   2. When the user fills the form, our application needs to pass the username and password to our Profile Service. Our Profile Service returns a Profile containing user's Full Name.
+
+ - **Development Flow - Unit Test:** We will start by creating a unit test for our ProfileService. We will create the file profileServiceSpec.coffee inside a new folder called services inside Spec.
+
+   ``` coffeescript
+   describe "Profile Service", ->
+
+     # load the controller's module
+     beforeEach module("myStoreApp")
+
+     profileService = undefined
+
+     # create an instance of the ProfileService and assign it to my local variable
+     beforeEach inject ($injector) ->
+       profileService = $injector.get 'profileService'
+
+     it "login user with username and password", ->
+       profileService.login("myUser", "myPassword")
+   ```
+
+   Now if we run 'grunt test' we should get an error saying "Error: Unknown provider: ProfileServiceProvider <- ProfileService" since our ProfileService does not actually exist yet. Lets fix that.
+
+ - **Development Flow - Coding:** Since our application is still small, we will keep working on our app.coffee. Only fix the problem you have in front of you. Lets add a new service.
+
+   ``` coffeescript
+   angular.module("myStoreApp").service "profileService", [ ->
+
+       login: ()->
+
+   ]
+   ```
+
+   We created a service and gave it a public method called 'login. 'Run 'grunt test' again and our tests are back to green.
+
+  - **Development Flow - Unit Test:** Lets add another failing test.
+
+    ``` coffeescript
+    it "login user with username and password", ->
+        profile = profileService.login("myUser", "myPassword")
+        expect(profile.fullName).toBe("MyFullName")
+    ```
+
+  - **Development Flow - Coding:**
+
+    ``` coffeescript
+    angular.module("myStoreApp").service "profileService", [ ->
+
+        retrieveProfile = (user, password)->
+          profile =
+            fullName: "MyFullName"
+
+        login: retrieveProfile
+
+    ]
+    ```
+
+
+
+
+
+
+
+
 
 
 
