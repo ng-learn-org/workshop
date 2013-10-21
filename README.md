@@ -464,31 +464,31 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    We created a service and gave it a public method called 'login. 'Run 'grunt test' again and our tests are back to green.
 
-  - **Development Flow - Unit Test:** Lets add another failing test.
+ - **Development Flow - Unit Test:** Lets add another failing test.
 
-    ``` coffeescript
-    it "login user with username and password", ->
-        profile = profileService.login("myUser", "myPassword")
-        expect(profile.fullName).toBe("MyFullName")
-    ```
+   ``` coffeescript
+   it "login user with username and password", ->
+       profile = profileService.login("myUser", "myPassword")
+       expect(profile.fullName).toBe("MyFullName")
+   ```
 
-  - **Development Flow - Coding:** We will provide an implementation to our login method. Pay special attention to our public vs private functions.
+ - **Development Flow - Coding:** We will provide an implementation to our login method. Pay special attention to our public vs private functions.
 
-    ``` coffeescript
-    angular.module("myStoreApp").service "profileService", [ ->
+   ``` coffeescript
+   angular.module("myStoreApp").service "profileService", [ ->
 
-        # private functions
-        retrieveProfile = (user, password)->
-          profile =
-            fullName: "MyFullName"
+       # private functions
+       retrieveProfile = (user, password)->
+         profile =
+           fullName: "MyFullName"
 
-        # public functions
-        login: retrieveProfile
+       # public functions
+       login: retrieveProfile
 
-    ]
-    ```
+   ]
+   ```
 
-    Lets run 'grunt test' again. All tests should be green now.
+   Lets run 'grunt test' again. All tests should be green now.
 
 
 
