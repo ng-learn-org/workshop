@@ -467,9 +467,9 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  - **Development Flow - Unit Test:** Lets add another failing test.
 
    ``` coffeescript
-   it "login user with username and password", ->
+   it "should login user with username and password", ->
        profile = profileService.login("myUser", "myPassword")
-       expect(profile.fullName).toBe("MyFullName")
+       expect(profile.fullName).toBe("Santiago Esteva")
    ```
 
  - **Development Flow - Coding:** We will provide an implementation to our login method. Pay special attention to our public vs private functions.
@@ -480,7 +480,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
        # private functions
        retrieveProfile = (user, password)->
          profile =
-           fullName: "MyFullName"
+           fullName: "Santiago Esteva"
 
        # public functions
        login: retrieveProfile
@@ -488,11 +488,51 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
    ]
    ```
 
-   Lets run 'grunt test' again. All tests should be green now.
+   Lets run 'grunt test' again. All tests should be green now. Lets pause for a second. What if we want to see the JS generated for our service? Go to .tmp/scripts and open app.js and lets take a look at the profileService.
 
+ - **Development Flow - Unit Test:** Lets add another failing test.
 
+   ``` coffeescript
+   it "should login user with username and password", ->
+       profile = profileService.login("myUser", "myPassword")
+       expect(profile.fullName).toBe("Santiago Esteva")
 
+   it "should login any user with username and password and return the fullName", ->
+       profile = profileService.login("anotherUser", "hisPassword")
+       expect(profile.fullName).toBe("John Doe")
+   ```
 
+   When running the tests you will see **"Expected 'Santiago Esteva' to be 'John Doe'."**
+
+ - **Development Flow - Coding:** We will need to make a few changes to fix this one. Lets start...
+
+   Im going to start providing a fake persistance layer, somewhere where we can retrieve the profile based on user/pass. We are going to use the object of type Constant. In our app.coffee...
+
+   ``` coffeescript
+   angular.module("myStoreApp").constant "myFakeDb",
+
+     profiles: [
+       user: "myUser"
+       password: "myPassword"
+       fullName: "Santiago Esteva"
+     ,
+       user: "anotherUser"
+       password: "hisPassword"
+       fullName: "John Doe"
+     ]
+   ```
+
+   In our profileService we want to include the constants as our fake DB and query it looking for that profile that matches our user/pass.
+
+   ``` coffeescript
+   retrieveProfile = (user, password)->
+       matchedProfile = undefined
+
+       angular.forEach myFakeDb.profiles, (profile, key)->
+           if profile.user is user then matchedProfile = profile
+
+       return matchedProfile
+   ```
 
 
 

@@ -9,8 +9,12 @@ describe "Profile Service", ->
   beforeEach inject ($injector) ->
     profileService = $injector.get 'profileService'
 
-  it "login user with username and password", ->
+  it "should login user with username and password", ->
     profile = profileService.login("myUser", "myPassword")
-    expect(profile.fullName).toBe("MyFullName")
+    expect(profile.fullName).toBe("Santiago Esteva")
+
+  it "should login any user with username and password and return the fullName", ->
+    profile = profileService.login("anotherUser", "hisPassword")
+    expect(profile.fullName).toBe("John Doe")
 
 

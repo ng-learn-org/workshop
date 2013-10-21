@@ -34,14 +34,31 @@ angular.module("myStoreApp").controller "loginController", ["$scope","$location"
 
 ]
 
-angular.module("myStoreApp").service "profileService", [ ->
+angular.module("myStoreApp").service "profileService", [ "myFakeDb" , (myFakeDb)->
 
   # private functions
   retrieveProfile = (user, password)->
-    profile =
-      fullName: "MyFullName"
+
+    matchedProfile = undefined
+
+    angular.forEach myFakeDb.profiles, (profile, key)->
+      if profile.user is user then matchedProfile = profile
+
+    return matchedProfile
 
   # public functions
   login: retrieveProfile
 
 ]
+
+angular.module("myStoreApp").constant "myFakeDb",
+
+  profiles: [
+    user: "myUser"
+    password: "myPassword"
+    fullName: "Santiago Esteva"
+  ,
+    user: "anotherUser"
+    password: "hisPassword"
+    fullName: "John Doe"
+  ]
