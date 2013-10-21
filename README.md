@@ -450,7 +450,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
        profileService.login("myUser", "myPassword")
    ```
 
-   Now if we run 'grunt test' we should get an error saying "Error: Unknown provider: ProfileServiceProvider <- ProfileService" since our ProfileService does not actually exist yet. Lets fix that.
+   Now if we run 'grunt test' we should get an error saying **"Error: Unknown provider: ProfileServiceProvider <- ProfileService"** since our ProfileService does not actually exist yet. Lets fix that.
 
  - **Development Flow - Coding:** Since our application is still small, we will keep working on our app.coffee. Only fix the problem you have in front of you. Lets add a new service.
 
@@ -472,19 +472,23 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
         expect(profile.fullName).toBe("MyFullName")
     ```
 
-  - **Development Flow - Coding:**
+  - **Development Flow - Coding:** We will provide an implementation to our login method. Pay special attention to our public vs private functions.
 
     ``` coffeescript
     angular.module("myStoreApp").service "profileService", [ ->
 
+        # private functions
         retrieveProfile = (user, password)->
           profile =
             fullName: "MyFullName"
 
+        # public functions
         login: retrieveProfile
 
     ]
     ```
+
+    Lets run 'grunt test' again. All tests should be green now.
 
 
 

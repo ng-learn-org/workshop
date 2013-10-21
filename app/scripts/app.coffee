@@ -36,10 +36,12 @@ angular.module("myStoreApp").controller "loginController", ["$scope","$location"
 
 angular.module("myStoreApp").service "profileService", [ ->
 
+  # private functions
   retrieveProfile = (user, password)->
     profile =
       fullName: "MyFullName"
 
+  # public functions
   login: retrieveProfile
 
 ]
