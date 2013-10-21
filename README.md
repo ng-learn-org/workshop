@@ -464,7 +464,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    We created a service and gave it a public method called 'login. 'Run 'grunt test' again and our tests are back to green.
 
-  - **Development Flow - Unit Test:** Lets add another failing test.
+ - **Development Flow - Unit Test:** Lets add another failing test.
 
    ``` coffeescript
    it "login user with username and password", ->
