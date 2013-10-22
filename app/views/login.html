@@ -1,8 +1,12 @@
 <div ng-controller="loginController">
     <h1>Login</h1>
     <form>
-        <label>username</label><input name="username">
-        <label>password</label><input name="password">
+        <label>username</label><input name="username" ng-model="ui.login.user">
+        <label>password</label><input name="password" ng-model="ui.login.pass">
         <button ng-click="submit()">Login</button>
     </form>
+
+    <!--Debugging purposes-->
+    <pre>{{ui | json}}</pre>
+    <!--Debugging purposes-->
 </div>

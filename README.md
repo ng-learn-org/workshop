@@ -670,6 +670,8 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    Before completing our AC lets jump for a second into debugging. Leaving the application running go to our login.html and add a block for debugging purposes
 
+   git checkout -f step-4c
+
    ``` html
    <div ng-controller="loginController">
        <h1>Login</h1>
@@ -696,7 +698,12 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    Go back to the browser and start playing with the inputs. This is how two way binding works. And this is a useful way of debugging your model.
 
-   Ctrl + Shift + J will open the developer tools in Chrome. Lets got the sources tab
+   Ctrl + Shift + J will open the developer tools in Chrome. Lets go to the sources tab, top left corner, click on that little box with a triangle pointing to the right and navigate the folder structure till you can double click on /scripts/app.js.
+
+   Look for loginController and add a breakpoint to the line " Profile.login($scope.ui.login.user, $scope.ui.login.pass); ". Now fill the form and hit submit.
+
+
+
 
 
 
