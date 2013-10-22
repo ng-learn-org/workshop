@@ -751,6 +751,12 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
    ]
    ```
 
+ - **Development Flow - Unit Test:** Now we need to add a test on our welcomeController so it retrieves the profile and pass it to our ui.
+
+
+
+
+
 
 
 
