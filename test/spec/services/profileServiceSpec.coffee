@@ -17,4 +17,10 @@ describe "Profile Service", ->
     profile = profileService.login("anotherUser", "hisPassword")
     expect(profile.fullName).toBe("John Doe")
 
+  it "should login any user and hold the profile in a local instance so its is retrievable", ->
+    profile = profileService.login("anotherUser", "hisPassword")
+    retrievedProfile = profileService.getSavedProfile()
+    expect(profile.fullName).toBe(retrievedProfile.fullName)
+
+
 

@@ -40,18 +40,22 @@ angular.module("myStoreApp").controller "loginController", ["$scope","$location"
 
 angular.module("myStoreApp").service "profileService", [ "myFakeDb" , (myFakeDb)->
 
+  matchedProfile = undefined
+
   # private functions
   retrieveProfile = (user, password)->
-
-    matchedProfile = undefined
 
     angular.forEach myFakeDb.profiles, (profile, key)->
       if profile.user is user then matchedProfile = profile
 
     return matchedProfile
 
+  getLastProfile = ->
+    matchedProfile
+
   # public functions
   login: retrieveProfile
+  getSavedProfile: getLastProfile
 
 ]
 

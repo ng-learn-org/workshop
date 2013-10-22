@@ -702,6 +702,59 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    Look for loginController and add a breakpoint to the line " Profile.login($scope.ui.login.user, $scope.ui.login.pass); ". Now fill the form and hit submit.
 
+   ### Back to Work
+
+   We have covered almost everything but every time we log in successfully, no matter what user we entered, we still see the same hardcoded full name.
+   We are calling the ProfileService to fecth a valid profile based on user/pass.
+
+ - So how do we pass the profile to the Welcome View?
+   There are more than one way of doing it.
+
+   1. You could use the $rootScope since it is a unique global object across the entire app. This should be seen as an anti-pattern. By doing this you are polluting this global entity. If you follow this path, eventually your $rootScope may get massive.
+   2. You could use Events. Angular provides a Publisher/Subscriber pattern implementation that works pretty well.
+   3. You could use a Service since it is a single instance object in your application for each Service you inject.
+   4. You could user a backend instance to save and retrieve that data from/to. This could be an application backend, a document based repo, a web service, etc.
+
+   We are going to start with option number 3. We are going to use a service to communicate two controllers. We have Login View with its loginController. We have Welcome View with its welcomeController. We have the Profile Service that already knows the profile that both Views/Controllers are looking for.
+
+ - **Development Flow - Unit Test:** We need to a new test on our profileService so we can verify it will save the profile and we can retrieve it later.
+
+   ``` coffeescript
+   it "should login any user and hold the profile in a local instance so its is retrievable", ->
+       profile = profileService.login("anotherUser", "hisPassword")
+       retrievedProfile = profileService.getSavedProfile()
+       expect(profile.fullName).toBe(retrievedProfile.fullName)
+   ```
+
+ - **Development Flow - Coding:** Whenever we login, we save the matchedProfile inside our single instantiated service. Then we just retrieve it on demand.
+
+   ``` coffeescript
+   angular.module("myStoreApp").service "profileService", [ "myFakeDb" , (myFakeDb)->
+
+     matchedProfile = undefined
+
+     # private functions
+     retrieveProfile = (user, password)->
+
+       angular.forEach myFakeDb.profiles, (profile, key)->
+         if profile.user is user then matchedProfile = profile
+
+       return matchedProfile
+
+     getLastProfile = ->
+       matchedProfile
+
+     # public functions
+     login: retrieveProfile
+     getSavedProfile: getLastProfile
+
+   ]
+   ```
+
+
+
+
+
 
 
 
