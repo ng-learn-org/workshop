@@ -534,6 +534,108 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
        return matchedProfile
    ```
 
+ - **Development Flow - Unit Test:** Next move is to provide the logic in our controller so it queries the ProfileService with the user/pass provided by the user. Lets open our loginControllerSpec.coffee. We need to make sure that after the form was submitted, the profile service was queried and then the location was changed to the welcome page.
+
+   We add a local instance of the profile service in our test
+
+   ``` coffeescript
+   loginController = scope = location = profileService = undefined
+   ```
+
+   We add _profileService_ to our inject statement. Angular removed the underscores and injects a version of our ProfileService. Then assign the service to our local instance.
+   Then we create a spy on the service's function called login. A spy is an object that will intercept that call and it will provide control to us to verify it was called, inject a canned response and other convenient methods.
+
+   ``` coffeescript
+   # Initialize the controller
+   beforeEach inject ($controller, $rootScope, $location, _profileService_) ->
+       location = $location
+       scope = $rootScope.$new()
+
+       # The injector unwraps the underscores (_) from around the parameter names when matching
+       profileService = _profileService_
+
+       loginController = $controller "loginController",
+           $scope: scope
+
+   describe "When clicking the submit button", ->
+
+       it "should go to the welcome page", ->
+
+           # Create spy on our service. Intercept the call to our login method. We do not care about its internal implementation or response
+           profileSpyOn = spyOn(profileService, "login")
+
+           scope.submit()
+
+           expect(profileSpyOn).toHaveBeenCalled()
+           expect(location.path()).toBe("/welcome")
+
+   ```
+
+   Since we are not really interested in the ProfileService, instead of injecting the ProfileService we could have created a small fake profileService that has a function called login.
+   If you do this, you should also tell the controller you want to inject the fake Service on the place of the real service. In the previous scenario, Angular was taking care of that for us.
+   The last change is to spy on the fakeService instead. The changes would look like this.
+
+   ``` coffeescript
+   loginController = scope = location = fakeProfileService = undefined
+
+   # Initialize the controller
+   beforeEach inject ($controller, $rootScope, $location) ->
+       location = $location
+       scope = $rootScope.$new()
+
+       # We create a fake profile Service that fulfills the login function
+       fakeProfileService =
+           login: ()->
+             return null
+
+       # We create the controller passing the profile service implementation to be injected.
+       loginController = $controller "loginController",
+           $scope: scope
+           profileService: fakeProfileService
+
+     describe "When clicking the submit button", ->
+
+       it "should go to the welcome page", ->
+
+           # Create spy on our service. Intercept the call to our login method. We do not care about its internal implementation or response
+           profileSpyOn = spyOn(fakeProfileService, "login")
+
+           scope.submit()
+
+           expect(profileSpyOn).toHaveBeenCalled()
+           expect(location.path()).toBe("/welcome")
+   ```
+
+   Both options are correct and you may find opting for the later one since allows you more control.
+   On the other hand, if the object you are testing has a lot of dependencies there may be an overhead creating all those fake implementations.
+   In that case you may choose to inject the real implementation but then use spyOn so you intercept those calls.
+   we are going to stick with this last implementation.
+
+   If we run 'grunt test' now, it will show the following error "Expected spy login to have been called." since our controller does not have any call to our profileService. We shall change that..
+
+ - **Development Flow - Coding:** Lets open our app.coffee and go into our loginController.
+
+   ``` coffeescript
+   angular.module("myStoreApp").controller "loginController", ["$scope","$location","profileService", ($scope, $location, Profile)->
+
+       $scope.submit = ()->
+         Profile.login("user", "password")
+         $location.path "/welcome"
+
+   ]
+   ```
+
+   Run the tests and we should be green again.
+
+
+
+
+
+
+
+
+
+
 
 
 
