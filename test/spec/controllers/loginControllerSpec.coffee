@@ -57,7 +57,11 @@ describe "Login Controller", ->
       # Create spy on our service. Intercept the call to our login method. We do not care about its internal implementation or response
       profileSpyOn = spyOn(fakeProfileService, "login")
 
+      # Faking user input
+      scope.ui.login.user = "labrador"
+      scope.ui.login.pass = "trinity1"
+
       scope.submit()
 
-      expect(profileSpyOn).toHaveBeenCalled()
+      expect(profileSpyOn).toHaveBeenCalledWith('labrador', 'trinity1')
       expect(location.path()).toBe("/welcome")

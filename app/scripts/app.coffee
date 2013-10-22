@@ -29,8 +29,11 @@ angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)
 
 angular.module("myStoreApp").controller "loginController", ["$scope","$location","profileService", ($scope, $location, Profile)->
 
+  $scope.ui =
+    login: {}
+
   $scope.submit = ()->
-    Profile.login("user", "password")
+    Profile.login($scope.ui.login.user, $scope.ui.login.pass)
     $location.path "/welcome"
 
 ]

@@ -627,6 +627,88 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
    Run the tests and we should be green again.
 
+ - **Development Flow - Unit Test:** Now lets make sure the controller is passing the values the user entered.
+
+   ``` coffeescript
+   describe "When clicking the submit button", ->
+
+       it "should go to the welcome page", ->
+
+           # Create spy on our service. Intercept the call to our login method. We do not care about its internal implementation or response
+           profileSpyOn = spyOn(fakeProfileService, "login")
+
+           # Faking user input
+           scope.ui.login.user = "labrador"
+           scope.ui.login.pass = "trinity1"
+
+           scope.submit()
+
+           expect(profileSpyOn).toHaveBeenCalledWith('labrador', 'trinity1')
+           expect(location.path()).toBe("/welcome")
+   ```
+
+   Lets run the tests. Failed as expected.
+
+ - **Development Flow - Coding:** Lets implement the code to make that test pass.
+
+   ``` coffeescript
+   angular.module("myStoreApp").controller "loginController", ["$scope","$location","profileService", ($scope, $location, Profile)->
+
+       $scope.ui =
+           login: {}
+
+       $scope.submit = ()->
+           Profile.login($scope.ui.login.user, $scope.ui.login.pass)
+           $location.path "/welcome"
+
+   ]
+   ```
+
+   We run the tests and green!  Lets run the app. 'grunt server'.
+
+   ### Debugging
+
+   Before completing our AC lets jump for a second into debugging. Leaving the application running go to our login.html and add a block for debugging purposes
+
+   ``` html
+   <div ng-controller="loginController">
+       <h1>Login</h1>
+       <form>
+           <label>username</label><input name="username">
+           <label>password</label><input name="password">
+           <button ng-click="submit()">Login</button>
+       </form>
+
+       <!--Debugging purposes-->
+       <pre>{{ui | json}}</pre>
+       <!--Debugging purposes-->
+   </div>
+   ```
+
+   Go back to your browser and you will able to observe a new block that illustrates and object that has an attribute called login.
+
+   Lets add some angular magic to our form inputs so the user's input is binded to our scope.
+
+   ``` html
+   <label>username</label><input name="username" ng-model="ui.login.user">
+   <label>password</label><input name="password" ng-model="ui.login.pass">
+   ```
+
+   Go back to the browser and start playing with the inputs. This is how two way binding works. And this is a useful way of debugging your model.
+
+   Ctrl + Shift + J will open the developer tools in Chrome. Lets got the sources tab
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
