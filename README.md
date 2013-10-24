@@ -156,27 +156,27 @@ If you get "Karma is not a task" or "Karma is not found". Please execute
   ``` coffeescript
   describe "Controller: WelcomeController", ->
 
-    # load the controller's module
-    beforeEach module("myStoreApp")
+      # load the controller's module
+      beforeEach module("myStoreApp")
 
-    welcomeController = scope = undefined
+      welcomeController = scope = undefined
 
-    # Initialize the controller and a mock scope
-    beforeEach inject(($controller, $rootScope) ->
+      # Initialize the controller and a mock scope
+      beforeEach inject(($controller, $rootScope) ->
 
-      $rootScope.profile =
-        firstName: "First"
-        lastName: "Last"
+        $rootScope.profile =
+          firstName: "First"
+          lastName: "Last"
 
-      scope = $rootScope.$new()
+        scope = $rootScope.$new()
 
-      welcomeController = $controller("welcomeController",
-        $scope: scope
+        welcomeController = $controller("welcomeController",
+          $scope: scope
+        )
       )
-    )
 
-    it "should compose the fullName based on firstName and lastName attributes from prexisting profile object", ->
-      expect(scope.fullName).toBe "First Last"
+      it "should compose the fullName based on firstName and lastName attributes from prexisting profile object", ->
+        expect(scope.fullName).toBe "First Last"
   ```
 
   Lets run the tests, go to the console and execute 'grunt test'. You will see "Expected undefined to be 'Santiago Esteva'." and "PhantomJS 1.9.2 (Linux): Executed 1 of 1 (1 FAILED) ERROR (0.183 secs / 0.009 secs)"
