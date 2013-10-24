@@ -201,13 +201,13 @@ If you get "Karma is not a task" or "Karma is not found". Please execute
 
   ``` coffeescript
     angular.module("myStoreApp", []).
-      run ($rootScope) ->
-        console.log 'Its alive!'
+        run ($rootScope) ->
+            console.log 'Its alive!'
 
-        # Prexisting profile object
-        $rootScope.profile =
-          firstName: "Santiago"
-          lastName: "Esteva"
+          # Prexisting profile object
+          $rootScope.profile =
+              firstName: "Santiago"
+              lastName: "Esteva"
   ```
 
   Lets refresh the app. You should now see "Welcome to the AngularJS World, Santiago Esteva".
@@ -236,11 +236,11 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  ``` coffeescript
  describe "Login Flow", ->
 
-   beforeEach ->
-     browser().navigateTo "/"
+     beforeEach ->
+         browser().navigateTo "/"
 
-   it "should be the first page", ->
-     expect(element("h1").text()).toBe "Login"
+     it "should be the first page", ->
+         expect(element("h1").text()).toBe "Login"
  ```
 
  If we run 'grunt test' then all unit and e2e test will be executed. We now have a failing test.
@@ -287,7 +287,7 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
      # When the url matches / then we inject the login html
      $routeProvider.when("/",
-       templateUrl: "views/login.html"
+         templateUrl: "views/login.html"
      )
 
  # Add a run block. This is executed only once when the app is bootstrapped.
@@ -296,8 +296,8 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
 
      # Prexisting profile object
      $rootScope.profile =
-       firstName: "Santiago"
-       lastName: "Esteva"
+         firstName: "Santiago"
+         lastName: "Esteva"
 
  # Add a controller to our main module/
  angular.module("myStoreApp").controller "welcomeController", ["$scope", ($scope)->
