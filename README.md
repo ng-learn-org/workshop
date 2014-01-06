@@ -323,7 +323,105 @@ AC 1 seems to require a change on the flow. We need to add another test to our t
  Lets run our app. 'grunt server' and we should find the login form being displayed. The url is 'http://localhost:9000/#/' The portion we should be paying attention to is '#/'. If we change the url manually to 'http://localhost:9000/#/welcome' the application will change the view and it will now display the welcome phrase only.
  AC 1 seems to be covered. We are in a good state to commit our code. We have added value and left everything in a good position so somebody else could pick this up tomorrow.
 
+### AC 2
 
+    git checkout -f step-4b
+
+ "As a User, when I fill in the login form, then I should be redirected to my welcome page."
+
+ It seems that once again, we could start with a flow interaction test. When I click on Login button, the application should redirect to the welcome page. We have two options to test this.
+ We could extend our E2E test simulating the user has filled the form, click Login and expect the welcome view has been attached and the welcome phrase is now displayed.
+ We can also write a unit test taking advantage we have access to the $location service, who is responsible for making that url change which ultimately produces the view change.
+ Which one to choose? 600 unit tests will run in 2 secs. 20 E2E test will execute in 1-2 mins. Taking into account the validation is covered by both test, the economic option seems to be the best fit in this case.
+
+ - **Development Flow - Unit Test:** Lets create a new test inside our spec/controllers folder. Lets call it "loginController.coffee"
+
+    ``` coffeescript
+    describe "Login Controller", ->
+
+      # load the controller's module
+      beforeEach module("myStoreApp")
+
+      loginController = scope = undefined
+
+      # Initialize the controller
+      beforeEach inject ($controller, $rootScope) ->
+        scope = $rootScope.$new()
+
+        loginController = $controller "loginController",
+          $scope: scope
+
+      describe "When clicking the submit button", ->
+
+        it "should go to the welcome page", ->
+    ```
+
+
+   If we run grunt test, we will get a message saying "Error: Argument 'loginController' is not a function, got undefined" Lets switch and code the minimum code to make this test green.
+
+ - **Development Flow - Coding:** Lets create a new controller inside our app. In our app.coffee lets add the new controller.
+
+    ``` coffeescript
+    angular.module("myStoreApp").controller "loginController", ["$scope", ($scope)->
+
+    ]
+    ```
+
+   Run the tests again. Success!
+
+ - **Development Flow - Unit Test:** Lets add a new expectation in our test, so when we click the submit button the app is redirected to the welcome page.
+
+    ``` coffeescript
+    describe "Login Controller", ->
+
+      # load the controller's module
+      beforeEach module("myStoreApp")
+
+      loginController = scope = location = undefined
+
+      # Initialize the controller
+      beforeEach inject ($controller, $rootScope, $location) ->
+        location = $location
+        scope = $rootScope.$new()
+
+        loginController = $controller "loginController",
+          $scope: scope
+
+      describe "When clicking the submit button", ->
+
+        it "should go to the welcome page", ->
+          scope.submit()
+          expect(location.path()).toBe("/welcome")
+    ```
+
+   Run grunt test and you will see a new error: TypeError: 'undefined' is not a function (evaluating 'scope.submit()'). Switch!
+
+ - **Development Flow - Coding:** We will add a new function to our scope and use the location service to change the path.
+
+    ``` coffeescript
+    angular.module("myStoreApp").controller "loginController", ["$scope","$location", ($scope, $location)->
+
+      $scope.submit = ()->
+        $location.path "/welcome"
+
+    ]
+    ```
+
+   Lets run the tests again...success!
+   Are we missing something? Lets attach this new behaviour to our View.
+   In our login.html we will give the control to our loginController and attach our submit function to out Login button.
+
+    ``` html
+    <div ng-controller="loginController">
+        <h1>Login</h1>
+        <form>
+            <label>username</label><input name="username">
+            <label>password</label><input name="password">
+            <button ng-click="submit()">Login</button>
+        </form>
+    </div>
+    ```
+   Lets run the app with 'grunt server' and hit the Login button. AC 2 seems to be covered. Lets move to AC 3.
 
 
 

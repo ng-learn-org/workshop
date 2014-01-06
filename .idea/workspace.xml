@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="813831ef-c535-4d36-adb0-58df1da815a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="workshop.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382019154721" ignored="false" />
     <file path="/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382022084588" ignored="false" />
-    <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388077405067" ignored="false" />
+    <file path="/Dummy.txt" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389026536596" ignored="false" />
     <file path="/app.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382021945508" ignored="false" />
     <file path="/welcomeControllerSpec.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381771754467" ignored="false" />
     <file path="/loginFlow.coffee" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1381948941265" ignored="false" />
@@ -70,26 +69,39 @@
     <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/Gruntfile.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
     <file path="$USER_HOME$/project/labradoodle/labrador/ui/angular/gruntTasksConfig/htmlbuild.json" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1382017972186" ignored="false" />
     <file path="/.gitignore" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1385497469757" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-11-26-AngularJS_Workshop_From_Zero_To_Ninja_Turtle_Jr.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1385500485276" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-11-26-AngularJS_Workshop_From_Zero_To_Ninja_Turtle_Jr.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389029262765" ignored="false" />
     <file path="/2013-11-26-AngularJS_Workshop_From_Zero_To_Ninja_Turtle_Jr.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1385500140362" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/atom.xml" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082252108" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-11-29-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part_2.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1385756080309" ignored="false" />
-    <file path="/2013-11-29-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part_2.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1385756079803" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/atom.xml" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389029348684" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-11-29-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part_2.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389029056329" ignored="false" />
+    <file path="/2013-11-29-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part_2.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389029016013" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-12-12-AngularJS-Worshop-Part2.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1386869772468" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-12-12-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part3.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1386871235235" ignored="false" />
-    <file path="/2013-12-12-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part3.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1386871114353" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-12-12-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part3.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389028865570" ignored="false" />
+    <file path="/2013-12-12-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part3.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389028849240" ignored="false" />
     <file path="$PROJECT_DIR$/../mobile-ionic-angular/nihao-esteva/.idea/workspace.xml" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082253157" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-12-26-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part4.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388078888301" ignored="false" />
-    <file path="/2013-12-26-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part4.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388078879989" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-12-26-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part4.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389028594379" ignored="false" />
+    <file path="/2013-12-26-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part4.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389028460622" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/tags/tools.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082252108" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-10-31-Service-Init-Complex-Objects.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388080648726" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_includes/plunker.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388080056900" ignored="false" />
     <file path="/plunker.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388079950513" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/2013/10/Service-Init-Complex-Objects/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388080422029" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/search.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082252108" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/search.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/2013/12/Ordering_a_set_of_results_object/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082252108" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/2013/11/AngularJS-Basic-Filters/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082252108" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/2013/11/Draw_a_select_with_default_option/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1388082252108" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_layouts/2013-12-26-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part5.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027263197" ignored="false" />
+    <file path="/2013-12-26-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part5.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389028096451" ignored="false" />
+    <file path="/*.regexp" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027260478" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/index.html" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/CNAME" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/js/lunr.min.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/README.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/js/search.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/js/bootstrap.min.js" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/Gemfile" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_site/Gemfile.lock" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389027295576" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2014-01-06-AngularJS_Workshop_From_Zero_To_Ninja_Jr_Part5.markdown" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389028294294" ignored="false" />
+    <file path="$PROJECT_DIR$/../ng-learn-org.github.io/_posts/2013-12-29-Dealing-with-IE-family.md" changelist="813831ef-c535-4d36-adb0-58df1da815a1" time="1389029450990" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +124,7 @@
       <file leaf-file-name="next-lessons.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/next-lessons.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="75" selection-start="3715" selection-end="3715" vertical-scroll-proportion="0.58303887">
+            <state line="42" column="24" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.1590106">
               <folding />
             </state>
           </provider>
@@ -121,7 +133,7 @@
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="324" column="0" selection-start="13269" selection-end="13269" vertical-scroll-proportion="0.0">
+            <state line="423" column="110" selection-start="17131" selection-end="17131" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,8 +171,8 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.coffee" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/next-lessons.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/next-lessons.md" />
       </list>
     </option>
   </component>
@@ -285,12 +297,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="24" width="1311" height="744" extended-state="0" />
+    <frame x="55" y="24" width="1311" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18478261" sideWeight="0.670247" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -444,14 +456,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="324" column="0" selection-start="13269" selection-end="13269" vertical-scroll-proportion="0.0">
+        <state line="423" column="110" selection-start="17131" selection-end="17131" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/next-lessons.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="75" selection-start="3715" selection-end="3715" vertical-scroll-proportion="0.58303887">
+        <state line="42" column="24" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.1590106">
           <folding />
         </state>
       </provider>
